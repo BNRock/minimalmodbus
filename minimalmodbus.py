@@ -219,7 +219,7 @@ class Instrument:
             self._print_debug("Create serial port {}".format(port))
             self.serial = _serialports[port] = serial.Serial(
                 port=port,
-                baudrate=19200,
+                baudrate=115200,
                 parity=serial.PARITY_NONE,
                 bytesize=8,
                 stopbits=1,
